@@ -223,6 +223,37 @@ footer{
         background-color: #fff;
     }
 
+    nav{
+        font-size: .55rem;
+    }
+
+    .logo{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+
+    body{
+        background-color: white;
+    }
+
     nav ul{
         flex-direction: column;
     }
@@ -363,29 +394,6 @@ footer{
         opacity: 1;
     }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 480px){
-
-    body{
-        background-color: white;
-    }
-
     nav{
         display: flex;
         justify-content: space-evenly;
@@ -393,6 +401,7 @@ footer{
         height: 3rem;
         width: 100vw;
         background-color: #105a89;
+        font-size: unset;
     }
     
     nav ul{
