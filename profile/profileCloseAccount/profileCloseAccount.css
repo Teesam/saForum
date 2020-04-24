@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Manrope&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600);
@@ -12,7 +11,7 @@
 
 body{
     font-family: 'work sans', sans-serif;
-    background-color: #e1e2d0;
+    background-color: #eff3f6;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -38,6 +37,7 @@ nav{
     height: 3rem;
     width: 100vw;
     background-color: #105a89;
+    z-index: 2;
 }
 
 .ul-container > div > div{
@@ -83,6 +83,298 @@ li a:active{
 
 /* -------------Section B----------- */
 
+.section-b{
+    margin-top: 3rem;
+    color: blue;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-head{
+    display: flex;
+    background-color: #5088ac;
+    height: 5rem;
+    width: 100vw;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-head > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-head > div > div > h2{
+    margin-right: 2rem;
+}
+
+#bio{
+    display: flex;
+    align-items: flex-start;
+}
+
+#bio-content{
+    width: 50%;
+}
+
+#location-icon{
+    margin-right: 2rem;
+    width: 1rem;
+    opacity: .9;
+}
+
+#stat{
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#stat > div{
+    text-align: center;
+}
+
+#stat > div > h6{
+    color: #363635;
+    margin-top: .3rem;
+}
+
+/* ----------Profile Nav------------ */
+
+.profile-nav{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.profile-nav ul{
+    height: 3rem;
+    width: 71%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin-right: .5rem;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.profile-nav > ul > li{
+    list-style-type: none;
+}
+
+.profile-nav > ul > li > a{
+    color: #105a89;
+    display: flex;
+    text-decoration: none;
+}
+
+.profile-nav-toggle{
+    display: none;
+}
+
+/* -----Profile Div----- */
+
+.profile-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.profile-info-1{
+    width: 25%;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.profile-info{
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+}
+
+.image-div{
+    background-color: #105a89;
+    height: 10rem;
+    position: relative;
+    background-image: url('../../asset/tech.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cover-photo{
+    width: 100%;
+    height: 100%;
+}
+
+#hr{
+    background-color: #ccc;
+    width: 100%;
+    height: 1px;
+    margin-top: 10rem;
+}
+
+#hr-m{
+    background-color: #ccc;
+    width: 100%;
+    height: 1px;
+    margin-top: 3rem;
+}
+
+#profile-image{
+    width: 45%;
+    border-radius: 50%;
+    margin-top: 2px;
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    border: 3px white solid;
+}
+
+.navigation{
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.navigation div > ul{
+    width: 100%;
+    height: 10rem;
+}
+
+.navigation div > ul >li{
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation > div > h3{
+    color: #105a89;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profiler{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profiler > h3{
+    width: 40%;
+    color: #105a89;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.profiler > h5{
+    width: 50%;
+    color: #363635;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.icon{
+    margin-right: 1rem;
+    opacity: .4;
+    width: 1rem;
+    margin-left: 3rem;
+}
+
+.navigation{
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.navigation > div > ul > li{
+    list-style-type: none;
+}
+
+.navigation > div > ul > li > a{
+    text-decoration: none;
+    color: #105a89;
+    margin-left: 2rem;
+    transition: .4s;
+}
+
+.navigation > div > ul > li > a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.side-nav{
+    margin-top: 2rem;
+}
+
+#active{
+    color: red;
+    font-weight: bold;
+}
+
+/* -----------Close Account------------ */
+
+.profile-body{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.close{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.close > div{
+    text-align: center;
+}
+
+.profile-body > .close > div > h5{
+    color: #105a89;
+}
+
+.close-btn{
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    border: 1px solid red;
+    transition: .3s;
+    margin-top: 2rem;
+}
+
+.close-btn:hover{
+    background-color: red;
+    color: white;
+}
 
 
 
@@ -91,6 +383,24 @@ li a:active{
 
 
 
+
+
+/* ---------Ad Div-------- */
+
+
+.ad-div{
+    width: 18%;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    height: 30rem;
+}
+
+.ad-div h1{
+    color: #105a89;
+    text-align: center;
+    margin: 10rem 1rem 0 1rem;
+}
 
 
 
@@ -145,9 +455,26 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 900px){
     body{
-        background-color: #fff;
+        background-color: #e1e2d0;
     }
 
     nav{
@@ -158,11 +485,100 @@ footer{
         font-size: 1rem;
     }
 
+    /* -------------Section B----------- */
+
+
+.profile{
+    font-size: .8rem;
+}
+
+.profile-body{
+    margin-left: 1rem;
+}
+
+.profile-head > div > div > h2{
+    font-size: 1rem;
+}
+
+/* -------Profiler------- */
+
+.profiler > h5{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: .7rem;
+    text-align: center ;
+}
+
+.profile-nav ul{
+    height: 3rem;
+    width: 70%;
+    margin-right: .5rem;
+    justify-content: space-evenly;
+}
+
+
+#hr{
+    margin-top: 5rem;
+}
+
+
+
+.icon{
+    margin-left: 1.5rem;
+}
+
+
+
+/* ---------Ad Div-------- */
+
+.ad-div h1{
+    font-size: 1rem;
+    margin: 10rem 1rem 0 1rem;
 }
 
 
 
 
+/* -----------Footer-------- */
+
+footer{
+    height: 30rem;
+    width: 100%;
+    background-color: #105a89;
+    margin-top: 5rem;
+}
+
+.footer-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-min-h{
+    color: white;
+    padding: 5rem 0rem 2rem 0rem;
+    text-decoration: underline;
+}
+
+.footer-p a{
+    color: rgb(160, 168, 192);
+    text-decoration: none;
+}
+
+.footer-p a:hover{
+    color: #fff;
+}
+
+.bottom-div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px #ccc solid;
+}
 
 
 
@@ -192,6 +608,10 @@ footer{
     .ul-container > div > div > ul{
         margin-bottom: 2rem;
         margin-top: 5rem;
+    }
+
+    #logout{
+        margin-left: unset;
     }
 
     .menu-wrap{
@@ -360,20 +780,269 @@ footer{
     }
     
     /* -------------Section B----------- */
-    
-   
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.profile-head{
+    display: flex;
+    background-color: #5088ac;
+    height: 7rem;
+    width: 100vw;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: .7rem;
+}
+
+.profile-head > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-head > div > div > h2{
+    margin-right: 2rem;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#location img{
+    width: .7rem;
+    margin-bottom: .5rem;
+}
+
+#name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#name h2{
+    margin-bottom: .7rem;
+}
+
+#bio-content{
+    width: 50%;
+}
+
+#location-icon{
+    margin-right: 2rem;
+    width: 1rem;
+    opacity: .9;
+}
+
+/* -----Profile Div----- */
+
+.profile-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.profile-info{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: unset;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    position: unset;
+}
+
+.profile-info-1{
+    display: none;
+}
+
+.image-div{
+    background-color: #105a89;
+    height: 10rem;
+    position: relative;background-image: url('../asset/tech.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cover-photo{
+    width: 100%;
+    height: 100%;
+}
+
+#hr{
+    display: none;
+}
+
+#hr-1{
+    background-color: #ccc;
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+}
+
+#hr-m{
+    background-color: #ccc;
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+}
+
+#profile-image{
+    width: 45%;
+    border-radius: 50%;
+    margin-top: 2px;
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    border: 3px white solid;
+}
+
+.profile-body{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: unset;
+    display: flex;
+    margin-left: unset;
+}
+
+.navigation{
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation > div > h3{
+    margin-left: unset;
+}
+
+.navigation > div > ul > li{
+    list-style-type: none;
+}
+
+.navigation > div > ul > li > a{
+    text-decoration: none;
+    color: #105a89;
+    margin-left: 2rem;
+    transition: .4s;
+}
+
+.side-nav{
+    margin-top: 2rem;
+}
+
+.icon{
+    width: 1rem;
+    margin-left: 20%;
+    opacity: .4;
+}
+
+
+/* ----------Profile Nav------------ */
+
+.profile-nav{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    background-color: transparent;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.profile-nav ul{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin-right: .5rem;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.profile-nav > ul > li{
+    list-style-type: none;
+    width: 25%;
+    height: 3rem;
+    margin-bottom: .3rem;
+}
+
+.profile-nav > ul > li > a{
+    color: #105a89;
+    display: flex;
+    height: 3rem;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .2rem .2rem .2rem;
+}
+
+.profile-nav > ul > li > a > img{
+    margin-bottom: 1rem;
+}
+
+.profile-nav-toggle{
+    display: none;
+}
+
+#stat{
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#stat > div{
+    text-align: center;
+}
+
+#stat > div > h6{
+    color: #363635;
+    margin-top: .3rem;
+}
 
 
 
+/* -----------Profile Body----------- */
+
+.close{
+    margin-bottom: 10rem;
+}
+
+/* ---------Ad Div-------- */
 
 
+.ad-div{
+    display: none;
+}
 
-
-
-
-
-
-
+.ad-div-clone{
+    display: none;
+}
 
 
 
@@ -385,7 +1054,7 @@ footer{
         height: auto;
         width: 100%;
         background-color: #105a89;
-        margin-top: 5rem;
+        margin-top: unset;
     }
     
     .footer-div{
@@ -425,4 +1094,6 @@ footer{
         border-top: 1px #ccc solid;
         padding-bottom: 3rem;
     }
+}
+
 }
