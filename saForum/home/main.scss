@@ -1,0 +1,68 @@
+//Home Mixins
+@import "home/mixins";
+
+.home-layout {
+    @include clearfix;
+    .home-main {
+        width: percentage(9/12);
+        padding-left: 6px;
+        padding-right: 6px;
+        float: left;
+    }
+
+    .home-right {
+        width: percentage(3/12);
+        padding-right: 6px;
+        padding-left: 6px;
+        float: left;
+    }
+}
+
+.home-layout {
+    .home-main {
+      margin-top: 20px;
+    }
+    .home-right {
+      margin-top: 20px;
+    }
+  }
+
+.home-layout {
+@include clearfix;
+.home-main {
+    @media (min-width: 700px) {
+    width: percentage(9/12);
+    float: left;
+    }
+}
+
+.home-right {
+    @media (min-width: 700px) {
+    width: percentage(3/12);
+    float: left;
+    }
+}
+}
+
+.home-layout {
+    @include clearfix;
+    .home-main {
+      @media (min-width: 700px) {
+        width: percentage(9/12);
+        float: left;
+      }
+  
+      @media (min-width: 1000px) {
+        width: percentage(9/12);
+      }
+    }
+    .home-right {
+      @media (min-width: 700px) {
+        width: percentage(3/12);
+        float: left;
+      }
+      @media (min-width: 1000px) {
+        width: percentage(3/12);
+      }
+    }
+  }

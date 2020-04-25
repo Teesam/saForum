@@ -1,0 +1,52 @@
+:root {
+  --grid-width: 90vw;
+  --grid-five: 50vw;
+  --number-col: 3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.layout-wrap {
+  max-width: var(--grid-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.three-col-grid .grid-item {
+  width: calc(var(--grid-width) / var(--number-col));
+  float: left;
+}
+
+.grid-item {
+  /* Width property */
+  margin-right: 10px;
+  margin-left: 10px;
+  float: left;
+  width: calc((100% - 20px * 3) / 3);
+}
+
+.five-layout-wrap {
+  max-width: var(--grid-five);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.five-col-grid .f-item {
+  width: calc(var(--grid-five) / 5);
+  float: left;
+}
+
+.f-item {
+  margin-right: 5px;
+  margin-left: 5px;
+  float: left;
+  width: calc((50% - 10px * 5) / 5);
+}

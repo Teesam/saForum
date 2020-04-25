@@ -1,0 +1,135 @@
+ .direct-main {
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vw;
+  }
+
+.dir-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 5px 5px;
+  }
+
+  .text-medium {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: bold;
+    color: #FBF9F9;
+  }
+
+.dir-cards {
+  grid-column: 1/span 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.dir-card {
+  grid-column-end: span 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #DEDEDE;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 7px;
+}
+
+.dir-card:hover {
+  transform: translateY(-10px);
+}
+
+.dir-card-image {
+  width: 70%;
+  padding-top: 60%;
+  padding-left: 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+.dir-card-image img {
+  width: 60%;
+  position: absolute;
+  transform: translate(35%, -100%);
+}
+
+.dir-card-content {
+  padding: 5px;
+}
+
+.dir-card-title {
+  margin-bottom: 5px;
+  color: black;
+  padding-left: 4px;
+}
+
+.dir-card-info {
+  display: flex;
+  align-self: end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px){
+  .dir-card {
+    grid-column-end: span 2;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .dir-main{
+    grid-gap: 10px;
+  }
+  .dir-card {
+    grid-column-end: span 3;
+  }
+
+  .direct-main {
+    padding-top: 6vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vw;
+  }
+}
+
+@media only screen and (max-width: 400px){
+
+  .direct-main {
+    padding-top: 6vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vw;
+  }
+
+  .dir-main{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .dir-cards {
+    grid-column: 1 / span 2;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .dir-card {
+    grid-column-end: span 2;
+  }
+}
+
+.container {
+    color: white;
+  }
+
+.text-muted {
+  color: #7639F7;
+  padding-left: 5px;
+  font-size: 11px;
+}
+
+.numb-assign {
+  padding: 0px 7px;
+  color: black;
+  font-size: 11px;
+}
