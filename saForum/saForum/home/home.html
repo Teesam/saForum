@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./home/home.css">
+  <link rel="stylesheet" href="./home/main.css">
+  <link rel="stylesheet" href="./home/main.scss">
+  <link rel="stylesheet" href="./home/_mixins.scss">
+  <link rel="stylesheet" href="./home/dir-card.css">
+  <link rel="stylesheet" href="./home/navbar.css">
+  <link rel="stylesheet" href="./home/main-body.css">
+  <link rel="stylesheet" href="./home/default-grid.css">
+  <link rel="stylesheet" href="./home/main1.css">
+</head>
+<body>
+
+  <section>
+    <header>
+      <h1 class="logo">saForum</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul class="section">
+          <li><a href="/home">Home</a></li>
+          <li><a href="{% url 'forums:marketplace' %}">Marketplace</a></li>
+          <li><a href="#">Escrow</a></li>
+          <li><a href="./vendor/vendor.html">Becoming a vendor</a></li>
+          <li><a href="{% url 'user_profiles:login' %}">Profile</a></li>
+          <li><a href="./Support/support.html">Support</a></li>
+        </ul>
+        <ul class="login-logout">
+          <li><a href="./register/register.html">Register</a></li>
+          <li><a href="./signin/signin.html">Sign In</a></li>
+          <li><a href="{% url 'user_profiles:logout' %}">Logout</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+  </section>
+  
+
+  
+
+  <div class="home">
+    <div class="home-layout">
+      <div class="home-main">
+        <div id="heading">
+          <div class="h-header container">
+            Forums
+          </div>
+          <div id="forums-section" class="card-container">
+<!--            <p>Automobile, Arts, Business, Education, Events, Finance, Food, Gaming, Health, Investment, Jobs/Vacancies,-->
+<!--             Literature, News, Politics, Science, Sports, Technology, Travel, TV/Movies</p>-->
+            <p>
+              {% for directory in list_of_directories %}
+              <a href="#">{{ directory.section_name }}</a>
+                {% if forloop.last %}
+                {% elif directory.section_name == 'Literature' %}
+                {% else %}
+                  ,&nbsp;
+                {% endif %}
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+        <div class="card directory">
+          <div class="topic-layout-wrap" id="naming">
+            <div class="topic-col-grid">
+              <h5 class="reset-this topic-item-sec"><a href="#">Directory</a></h5>
+              <h5 class="reset-this topic-item-num"><a href="#">Topics</a></h5>
+              <h5 class="reset-this topic-item-mess"><a href="#">Posts</a></h5>
+              <h5 class="reset-this topic-item-post"><a href="#">Last Post</a></h5>
+            </div>
+          </div>
+          <div class="topic-list">
+            {% for topic in list_of_directories %}
+              <div class="topic-card">
+                <div class="topic-head"></div>
+                <div class="topic-body">
+                  <div class="topic-layout-wrap">
+                    <div class="topic-col-grid">
+                      <p class="reset-this topic-item-sec section-highlight"><a href="#">{{ topic }}</a></p>
+                      <p class="reset-this topic-item-num descr">5000</p>
+                      <p class="reset-this topic-item-mess descr">3000</p>
+                      <div class="reset-this topic-item-post descr-post"><a href="#">Great Article on automobile manufacturing. This has been a great review</a>
+                        <p>Post By:Username  Date:22/11/2019</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% if forloop.last %}
+              {% else %}
+                <hr class="hr-hb"/>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="home-right">
+        <div class="wel-misc">
+          <div class="misc-head">Welcome To SaForum</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body">
+            <p>Welcome to the saForum forum where you get the latest and up-to-date news on current events.
+            Create an account and get in touch with professional in their respective field or make a contribution to
+            your field by providing ideas and assistance to people.</p>
+          </div>
+        </div>
+        <div class="wel-misc" id="wel-2">
+          <div class="misc-head">Staffs Online</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body">
+            <p> Staff 1 Moderator</p>
+            <p> Staff 2 Moderator</p>
+            <p> Staff 3 Moderator</p>
+          </div>
+        </div>
+        <div class="wel-misc" id="wel-3">
+          <div class="misc-head">Members Online</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body">
+            <p>User 1, User 2, User 3 and <a href="#">more</a></p>
+          </div>
+        </div>
+        <div class="wel-misc" id="wel-4">
+          <div class="misc-head">Join Us on Social Media</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body">
+            <p>facebook</p>
+            <p>jabber</p>
+            <p>twitter</p>
+          </div>
+        </div>
+        <div class="wel-misc" id="wel-5">
+          <div class="misc-head">Latest Posts</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body">
+            <p>Post 1: This is a great resource&nbsp;<span class="lap-1">By Username</span>&nbsp;
+              <span class="lap-2">Time: 21/02/2019 4:00pm</span></p>
+            <p>Post 2: This is a great resource&nbsp;<span class="lap-1">By Username</span>&nbsp;
+              <span class="lap-2">Time: 21/01/2019 4:00pm</span></p>
+            <p>Post 3: This is a great resource&nbsp;<span class="lap-1">By Username</span>&nbsp;
+              <span class="lap-2">Time: 19/02/2019 4:00pm</span></p>
+          </div>
+        </div>
+        <div class="wel-misc" id="wel-6">
+          <div class="misc-head">Forum Statistics</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body" id="bod-6">
+            <p>Total Topics: &nbsp;<span class="lap-1">23,000</span></p>
+            <p>Total Posts: &nbsp;<span class="lap-1">100,000</span></p>
+            <p>Members: &nbsp;<span class="lap-1">50</span></p>
+            <p>Active Members: &nbsp;<span class="lap-1">20</span></p>
+            <p>Users Online: &nbsp;<span class="lap-1">30</span></p>
+            <p>Members Online: &nbsp;<span class="lap-1">10</span></p>
+            <p>Guest Online: &nbsp;<span class="lap-1">20</span></p>
+            <p>Latest member: &nbsp;<span class="lap-1" id="latest-id"><a href="#">placehere</a></span></p>
+          </div>
+        </div>
+        <div class="wel-misc" id="wel-7">
+          <div class="misc-head">News</div>
+          <hr class="hr-hb"/>
+          <div class="misc-body">
+            <div>
+              <p class="news-head">Political Climate</p>
+              <p class="news-body">This is a news article for you lot to read. Contrary to popular belief, Lorem Ipsum is not simply
+                random text. It has roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old. Richard McClintock</p>
+            </div>
+            <div>
+              <p class="news-head">Covid-19</p>
+              <p class="news-body">Nullam viverra ligula vehicula libero vulputate rutrum. Nulla et volutpat sem. Donec ac lacinia purus.
+                Nam interdum lectus et erat tristique ultrices. Duis pretium mauris leo, vel porta risus aliquam non.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

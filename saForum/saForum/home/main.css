@@ -1,0 +1,60 @@
+.home-layout:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+.home-layout .home-main {
+  width: 75%;
+  padding-left: 6px;
+  padding-right: 6px;
+  float: left; }
+
+.home-layout .home-right {
+  width: 25%;
+  padding-right: 6px;
+  padding-left: 6px;
+  float: left; }
+
+.home-layout .home-main {
+  margin-top: 20px; }
+
+.home-layout .home-right {
+  margin-top: 20px; }
+
+.home-layout:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+@media (min-width: 700px) {
+  .home-layout .home-main {
+    width: 75%;
+    float: left; } }
+
+@media (min-width: 700px) {
+  .home-layout .home-right {
+    width: 25%;
+    float: left; } }
+
+.home-layout:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+@media (min-width: 700px) {
+  .home-layout .home-main {
+    width: 75%;
+    float: left; } }
+
+@media (min-width: 1000px) {
+  .home-layout .home-main {
+    width: 75%; } }
+
+@media (min-width: 700px) {
+  .home-layout .home-right {
+    width: 25%;
+    float: left; } }
+
+@media (min-width: 1000px) {
+  .home-layout .home-right {
+    width: 25%; } }
