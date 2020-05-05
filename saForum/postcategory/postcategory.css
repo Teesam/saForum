@@ -12,7 +12,7 @@
 
 body{
     font-family: 'work sans', sans-serif;
-    background-color:white;
+    background-color: white;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -37,7 +37,7 @@ nav{
     align-items: center;
     height: 3rem;
     width: 100vw;
-    background-color: #105a89;
+    background: linear-gradient(45deg, black, black, #105a89);
     z-index: 2;
 }
 
@@ -91,7 +91,7 @@ li a:active{
     position: fixed;
     left: 0;
     top: 45%;
-    background-color: #105a89;
+    background-color: #032336;
     color: white;
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -105,9 +105,9 @@ li a:active{
     width: 8rem;
     padding: .5rem 1rem;
     margin: 2rem 0rem;
-    background-color: white;
+    background-color: #fff;
     color: #105a89;
-    border: #105a89 solid 1px;
+    box-shadow: 0 0 15px #105a89;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
@@ -135,7 +135,7 @@ li a:active{
 }
 
 .category-title{
-    background-color: #105a89;
+    background-color: rgb(3, 24, 37);
     width: 100%;
     height: 2rem;
     border-radius: 10px;
@@ -155,10 +155,11 @@ li a:active{
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
-    background-color: #ccc;
+    background-color: #032336;
     margin-top: 1rem;
     border-radius: 10px;
     transform: translateY(0);
+    color: #fff;
     transition: .7s all ease-in-out;
 }
 
@@ -168,7 +169,7 @@ li a:active{
 
 .directory > h4 > a{
     text-decoration: none;
-    color: #105a89;
+    color: #fff;
 }
 
 .post-date{
@@ -180,31 +181,10 @@ li a:active{
 /* -----------Footer-------- */
 
 footer{
-    height: 30rem;
+    height: 7rem;
     width: 100%;
-    background-color: #105a89;
+    background: linear-gradient(40deg, black, #105a89);
     margin-top: 5rem;
-}
-
-.footer-div{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footer-min-h{
-    color: white;
-    padding: 5rem 0rem 2rem 0rem;
-    text-decoration: underline;
-}
-
-.footer-p a{
-    color: rgb(160, 168, 192);
-    text-decoration: none;
-}
-
-.footer-p a:hover{
-    color: #fff;
 }
 
 .bottom-div{
@@ -228,9 +208,7 @@ footer{
 
 
 @media (max-width: 900px){
-    body{
-        background-color: #fff;
-    }
+  
 
     nav{
         font-size: .55rem;
@@ -246,7 +224,6 @@ footer{
         position: fixed;
         left: 0;
         top: 45%;
-        background-color: #105a89;
         color: white;
         padding: 1rem 1rem;
         border-radius: 10px;
@@ -290,9 +267,6 @@ footer{
 
 @media (max-width: 480px){
 
-    body{
-        background-color: white;
-    }
 
     nav ul{
         flex-direction: column;
@@ -332,7 +306,7 @@ footer{
         right: 3rem;
         height: 30px;
         width: 30px;
-        background-color: #105a89;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -440,7 +414,7 @@ footer{
         align-items: center;
         height: 3rem;
         width: 100vw;
-        background-color: #105a89;
+        background: linear-gradient(45deg, black, #105a89);
         font-size: unset;
     }
     
@@ -478,7 +452,6 @@ footer{
         position: fixed;
         left: 0;
         top: 45%;
-        background-color: #105a89;
         color: white;
         padding: 1rem 1rem;
         border-radius: 10px;
@@ -512,7 +485,6 @@ footer{
 }
 
 .category-title{
-    background-color: #105a89;
     width: 95%;
     height: 2rem;
     border-radius: 10px;
@@ -556,7 +528,6 @@ footer{
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
-    background-color: #ccc;
     margin-top: 1rem;
     border-radius: 10px;
     transform: translateY(0);
@@ -569,7 +540,6 @@ footer{
 
 .directory > h4 > a{
     text-decoration: none;
-    color: #105a89;
 }
 
 .post-date{

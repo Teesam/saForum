@@ -37,7 +37,7 @@ nav{
     align-items: center;
     height: 3rem;
     width: 100vw;
-    background-color: #105a89;
+    background: linear-gradient(45deg, black, black, #105a89);
     z-index: 2;
 }
 
@@ -131,21 +131,6 @@ li a:active{
     opacity: .9;
 }
 
-#stat{
-    width: 15rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#stat > div{
-    text-align: center;
-}
-
-#stat > div > h6{
-    color: #363635;
-    margin-top: .3rem;
-}
-
 /* ----------Profile Nav------------ */
 
 .profile-nav{
@@ -209,7 +194,7 @@ li a:active{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    height: 45rem;
+    height: 60rem;
     position: absolute;
     top: 8rem;
     left: 2rem;
@@ -290,7 +275,7 @@ li a:active{
 
 .profiler > h3{
     width: 40%;
-    color: #105a89;
+    color: #000;
     margin-left: 2rem;
     margin-top: 1rem;
 }
@@ -300,7 +285,7 @@ li a:active{
     color: #363635;
     margin-left: 2rem;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .icon{
@@ -309,6 +294,10 @@ li a:active{
     margin-left: 3rem;
     margin-right: 1rem;
     opacity: .4;
+}
+
+hr{
+    margin-top: 1rem;
 }
 
 
@@ -472,8 +461,8 @@ h3 > a{
     border-radius: 10px;
     height: 65vh;
     position: fixed;
-    top: 11.5rem;
-    right: .4rem;
+    top: 6.5rem;
+    right: 1.5rem;
 }
 
 .ad-div-clone{
@@ -491,6 +480,20 @@ h3 > a{
 }
 
 
+.stat{
+    position: fixed;
+    left: 0;
+    top: 45%;
+    background-color: #032336;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.stat > div{
+    margin-bottom: 1rem;
+}
+
 
 
 /* -----------Footer-------- */
@@ -498,7 +501,7 @@ h3 > a{
 footer{
     height: 30rem;
     width: 100%;
-    background-color: #105a89;
+    background: linear-gradient(45deg, black, black, #105a89);
     margin-top: 5rem;
 }
 
@@ -628,6 +631,10 @@ footer{
     margin: 10rem 1rem 0 1rem;
 }
 
+.ad-div{
+    right: .6rem;
+}
+
 
 
 
@@ -731,7 +738,7 @@ footer{
         right: 3rem;
         height: 30px;
         width: 30px;
-        background-color: #105a89;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -839,7 +846,6 @@ footer{
         align-items: center;
         height: 3rem;
         width: 100vw;
-        background-color: #105a89;
         font-size: unset;
     }
     
@@ -1099,20 +1105,18 @@ footer{
     display: none;
 }
 
-#stat{
-    width: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.stat{
+    position: fixed;
+    left: 0;
+    top: 45%;
+    background-color: #032336;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 10px;
 }
 
-#stat > div{
-    text-align: center;
-}
-
-#stat > div > h6{
-    color: #363635;
-    margin-top: .3rem;
+.stat > div{
+    margin-bottom: 1rem;
 }
 
 /* -------Profiler------ */
